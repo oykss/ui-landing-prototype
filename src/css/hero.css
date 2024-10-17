@@ -1,0 +1,183 @@
+.hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 10px;
+  background-image: url('../img/hero/Union@1x.jpg');
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .head-container {
+    background-image: url('../img/hero/Union@2x.jpg');
+  }
+}
+
+.hero .slide-number {
+  font-size: 14px;
+  color: var(--text-color-grey-1);
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--text-color-white);
+  margin-bottom: 16px;
+}
+
+.hero h1 > span {
+  color: var(--text-color-yellow);
+}
+
+.hero .desc {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 56px;
+  color: var(--text-color-grey-1);
+}
+
+.hero .wrap-btn {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 92px;
+}
+
+.hero .link {
+  text-align: center;
+  background-color: var(--background-yellow);
+  border-radius: 2px;
+  font-size: 18px;
+  width: 140px;
+  padding: 4px 0;
+  transition: all 250ms ease-in-out;
+}
+
+.hero .link:is(:hover, :focus) {
+  opacity: 0.8;
+}
+
+.hero .btn {
+  font-weight: 300;
+  font-size: 18px;
+  width: 220px;
+  padding: 4px 0;
+  color: var(--hero-btn);
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--hero-btn);
+  transition: all 250ms ease-in-out;
+}
+
+.hero .btn:is(:hover, :focus) {
+  color: var(--effect-color-yellow);
+  border-color: var(--effect-color-yellow);
+}
+
+.hero .swiper-slide {
+  overflow: hidden;
+}
+
+.hero .swiper-pagination {
+  position: relative;
+}
+
+.hero .swiper-pagination-bullet {
+  border-radius: 4px;
+  width: 21px;
+  height: 4px;
+  background-color: var(--pagination-grey);
+}
+
+.hero .swiper-pagination-bullet-active {
+  width: 36px;
+  background-color: var(--pagination-yellow);
+}
+
+@media (min-width: 768px) {
+  .hero .slide-number {
+    font-size: 18px;
+  }
+
+  .hero h1 {
+    font-size: 70px;
+    margin-bottom: 24px;
+  }
+
+  .hero .desc {
+    font-size: 18px;
+    margin-bottom: 84px;
+  }
+
+  .hero .wrap-btn {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 120px;
+  }
+
+  .hero .link {
+    width: 160px;
+    padding: 12px 0;
+  }
+
+  .hero .btn {
+    width: 240px;
+    padding: 12px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero .slide-number {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 100px 0 22px;
+  }
+
+  .hero h1 {
+    font-size: 70px;
+  }
+
+  .hero .desc {
+    font-size: 24px;
+  }
+
+  .hero .wrap-btn {
+    margin-bottom: 160px;
+  }
+
+  .hero .link {
+    width: 200px;
+    padding: 15px 0;
+  }
+
+  .hero .btn {
+    width: 300px;
+    padding: 15px 0;
+  }
+
+  .hero .swiper-pagination-bullet {
+    width: 23px;
+  }
+
+  .hero .swiper-pagination-bullet-active {
+    width: 82px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .wrap-btn {
+    margin-bottom: 180px;
+  }
+
+  .hero .link {
+    width: 200px;
+    padding: 16px 0;
+  }
+
+  .hero .btn {
+    width: 300px;
+    padding: 16px 0;
+  }
+}

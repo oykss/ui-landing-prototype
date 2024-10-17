@@ -1,0 +1,246 @@
+.reviews {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews .container {
+  position: relative;
+}
+
+.reviews .swiper {
+  position: relative;
+  width: 375px;
+}
+
+.reviews .swiper-slide {
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--secondary-background);
+  transition: all 250ms ease-in-out;
+}
+
+.reviews .data {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color-grey-3);
+}
+
+.reviews .swiper-slide-prev,
+.reviews .swiper-slide-next {
+  background-color: var(--background-light) !important;
+  opacity: 0.8;
+  transition: all 250ms ease-in-out;
+}
+
+.reviews .name {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.reviews .rev {
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+}
+
+.reviews .swiper-btn {
+  background-color: var(--btn-color-yellow);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviews .swiper-btn::after {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.reviews .swiper-button-prev {
+  left: 35px;
+}
+
+.reviews .swiper-button-next {
+  right: 35px;
+}
+
+.reviews .swiper::before,
+.reviews .swiper::after {
+  content: '';
+  position: absolute;
+  overflow: visible;
+  width: 48px;
+  height: 600px;
+  background: inherit;
+  z-index: 2;
+  background-color: var(--primary-background);
+  filter: blur(13px);
+  bottom: 0;
+}
+
+.reviews .swiper::before {
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+
+.reviews .swiper::after {
+  right: 0;
+  transform: translate(50%, 50%);
+}
+
+.reviews .link-more {
+  display: inline-flex;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 16px 40px;
+  color: var(--btn-color-grey);
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--btn-color-grey);
+  margin-top: 36px;
+}
+
+.reviews .link-more:is(:hover, :focus) {
+  background-color: var(--btn-color-yellow);
+  border-color: var(--btn-color-yellow);
+  color: var(--text-color);
+}
+
+.reviews .icon-untitled {
+  position: absolute;
+  z-index: 4;
+  bottom: -55px;
+  right: 80px;
+  width: 50px;
+  fill: var(--background-yellow);
+  opacity: 0.65;
+}
+
+.animate-button {
+  animation: button_untitled 500ms ease;
+}
+
+@keyframes button_untitled {
+  50% {
+    transform: translateY(-24px);
+    opacity: 0.9;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews .name {
+    font-size: 22px;
+    margin-top: 18px;
+    margin-bottom: 36px;
+  }
+
+  .reviews .data {
+    font-size: 18px;
+  }
+
+  .reviews .swiper {
+    width: 768px;
+  }
+
+  .reviews .swiper-slide {
+    padding: 48px;
+  }
+
+  .reviews .swiper-btn {
+    width: 56px;
+    height: 56px;
+  }
+
+  .reviews .swiper-btn::after {
+    font-size: 18px;
+  }
+
+  .reviews .swiper-button-prev {
+    left: 160px;
+  }
+
+  .reviews .swiper-button-next {
+    right: 160px;
+  }
+
+  .reviews .swiper::before,
+  .reviews .swiper::after {
+    width: 100px;
+    height: 700px;
+    filter: blur(19px);
+  }
+
+  .reviews .link-more {
+    margin-top: 48px;
+  }
+
+  .reviews .icon-untitled {
+    bottom: -63px;
+    right: 220px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews .swiper {
+    width: 1180px;
+  }
+
+  .reviews .swiper-button-prev {
+    left: 260px;
+  }
+
+  .reviews .swiper-button-next {
+    right: 260px;
+  }
+
+  .reviews .swiper::before,
+  .reviews .swiper::after {
+    width: 100px;
+    height: 700px;
+    filter: blur(20px);
+  }
+
+  .reviews .link-more {
+    margin-top: 64px;
+  }
+
+  .reviews .icon-untitled {
+    bottom: -68px;
+    right: 245px;
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews .swiper {
+    width: 1440px;
+  }
+
+  .reviews .swiper-button-prev {
+    left: 325px;
+  }
+
+  .reviews .swiper-button-next {
+    right: 325px;
+  }
+
+  .reviews .swiper::before,
+  .reviews .swiper::after {
+    width: 200px;
+    height: 700px;
+    filter: blur(24px);
+  }
+
+  .reviews .icon-untitled {
+    bottom: -68px;
+    right: -260px;
+    width: 100%;
+  }
+}

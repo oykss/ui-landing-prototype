@@ -1,0 +1,86 @@
+.offer {
+  padding-top: 72px;
+}
+
+.offer .swiper-slide {
+  display: grid;
+  justify-items: center;
+}
+
+.offer .card-desc {
+  width: 310px;
+  display: grid;
+  justify-items: center;
+  background-color: var(--secondary-background);
+  padding: 60px 0 40px;
+}
+
+.offer .subtitle {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.offer .link {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  background-color: var(--background-light);
+  width: 215px;
+  padding: 12px 0;
+  border-radius: 2px;
+  transition: all 250ms ease-in-out;
+}
+
+.offer .link:is(:hover, :focus) {
+  background-color: var(--effect-color-yellow);
+}
+
+.offer .swiper-pagination-bullet {
+  border-radius: 4px;
+  width: 21px;
+  height: 4px;
+  background-color: var(--pagination-grey-1);
+}
+
+.offer .swiper-pagination-bullet-active {
+  background-color: var(--pagination-yellow);
+  width: 23px;
+}
+
+@media (min-width: 768px) {
+  .offer .swiper-pagination {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+  }
+
+  .offer .swiper-pagination-bullet {
+    width: 23px;
+    height: 4px;
+  }
+
+  .offer .swiper-pagination-bullet-active {
+    width: 27px;
+  }
+
+  .offer {
+    padding-top: 82px;
+  }
+}
+
+@media (max-width: 1439px) and (min-width: 1280px) {
+  .offer .swiper {
+    width: 1050px !important;
+  }
+
+  .offer .swiper-slide {
+    width: 350px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .offer {
+    padding-top: 116px;
+  }
+}

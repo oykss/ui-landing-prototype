@@ -1,0 +1,86 @@
+.qustions .list-qustions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qustions .wrap {
+  flex-direction: column;
+}
+
+.qustions .item-qustion {
+  display: grid;
+  background-color: var(--secondary-background);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.qustions .qustion-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  cursor: pointer;
+}
+
+.qustions .icon-arrow {
+  fill: var(--background-black);
+}
+
+.qustions .list-qustions .desc {
+  font-size: 14px;
+  color: var(--text-color-grey-2);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.qustions .list-qustions .active .desc {
+  padding: 24px;
+  padding-top: 0;
+  max-height: 500px;
+  opacity: 1;
+}
+
+.qustions .icon-arrow {
+  transition: transform 0.3s ease;
+}
+
+.qustions .active .icon-arrow {
+  transform: rotate(180deg);
+}
+
+.qustions .subtitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.qustions .link-more {
+  display: inline-flex;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 16px 40px;
+  color: var(--btn-color-grey);
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--btn-color-grey);
+  margin-top: 36px;
+  transition: all 250ms ease-in-out;
+}
+
+.link-more:is(:hover, :focus) {
+  background-color: var(--btn-color-yellow);
+  border-color: var(--btn-color-yellow);
+  color: var(--text-color);
+}
+
+@media (min-width: 768px) {
+  .qustions .list-qustions .desc {
+    font-size: 18px;
+  }
+
+  .qustions .subtitle {
+    font-size: 20px;
+  }
+}

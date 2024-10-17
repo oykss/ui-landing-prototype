@@ -1,0 +1,71 @@
+<div class="modal-overlay" id="modal-form">
+  <div class="modal-form modal">
+    <button aria-label="close" class="modal-btn-close btn-close" type="button">
+      <svg class="modal-icon-close" width="12" height="12">
+        <use href="/img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal-title">Зворотній звязок</p>
+    <form class="form-modal" novalidate>
+      <div class="inputBox">
+        <input
+          type="text"
+          name="user_name"
+          id="user_name_modal"
+          minlength="2"
+          placeholder=""
+          required
+        />
+        <svg class="icon-close" data-action="close-name" width="14" height="14">
+          <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+        </svg>
+        <label for="user_name_modal">Ваше імя</label>
+      </div>
+      <div class="inputBox">
+        <input type="email" name="user_email" id="user_email_modal" placeholder="" required />
+        <svg class="icon-close" data-action="close-email" width="14" height="14">
+          <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+        </svg>
+        <label for="user_email_modal">E-mail</label>
+      </div>
+      <div class="inputBox">
+        <input
+          type="tel"
+          name="user_phone"
+          id="user_phone_modal"
+          maxlength="15"
+          placeholder=""
+          required
+        />
+        <svg class="icon-close" data-action="close-phone" width="14" height="14">
+          <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+        </svg>
+        <label for="user_phone_modal">Phone</label>
+      </div>
+
+      <input
+        class="visually-hidden"
+        type="checkbox"
+        name="user-privacy_modal"
+        id="user-privacy-modal"
+        value="true"
+      />
+      <label class="privacy-policy-label" for="user-privacy-modal">
+        <span class="check-mark-wrap">
+          <svg data-action="icon-check-mar" class="icon-check-mar" width="12" height="10">
+            <use data-action="icon-check-mar" href="/img/icons.svg#icon-checkmark"></use>
+          </svg>
+        </span>
+        <span class="privacy-policy-text">
+          Я підтверджую, що ознайомлений із
+          <a class="privacy-policy-link" href="#" target="_blank">
+            Політикою обробки персональних даних
+          </a>
+          та приймаю умови Політики.
+        </span>
+      </label>
+
+      <button class="btn-sumbit" type="submit">Замовити дзвінок</button>
+    </form>
+  </div>
+</div>

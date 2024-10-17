@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Proba Pro ExLt';
+  src: url('ProbaPro-ExtraLight.eot');
+  src: local('Proba Pro ExtraLight'), local('ProbaPro-ExtraLight'),
+    url('ProbaPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+    url('ProbaPro-ExtraLight.woff2') format('woff2'), url('ProbaPro-ExtraLight.woff') format('woff'),
+    url('ProbaPro-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proba Pro';
+  src: url('ProbaPro-Bold.eot');
+  src: local('Proba Pro Bold'), local('ProbaPro-Bold'),
+    url('ProbaPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('ProbaPro-Bold.woff2') format('woff2'), url('ProbaPro-Bold.woff') format('woff'),
+    url('ProbaPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proba Pro Md';
+  src: url('ProbaPro-Medium.eot');
+  src: local('Proba Pro Medium'), local('ProbaPro-Medium'),
+    url('ProbaPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('ProbaPro-Medium.woff2') format('woff2'), url('ProbaPro-Medium.woff') format('woff'),
+    url('ProbaPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proba Pro SmBd';
+  src: url('ProbaPro-SemiBold.eot');
+  src: local('Proba Pro SemiBold'), local('ProbaPro-SemiBold'),
+    url('ProbaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('ProbaPro-SemiBold.woff2') format('woff2'), url('ProbaPro-SemiBold.woff') format('woff'),
+    url('ProbaPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proba Pro';
+  src: url('ProbaPro-Regular.eot');
+  src: local('Proba Pro Regular'), local('ProbaPro-Regular'),
+    url('ProbaPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('ProbaPro-Regular.woff2') format('woff2'), url('ProbaPro-Regular.woff') format('woff'),
+    url('ProbaPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

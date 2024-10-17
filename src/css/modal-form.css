@@ -1,0 +1,67 @@
+.modal-form {
+  width: 343px;
+  max-height: 100%;
+  padding: 20px;
+}
+
+.modal-form .btn-close {
+  right: 20px;
+}
+
+.modal-form .modal-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.modal-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-form .btn-sumbit {
+  background-color: var(--btn-color-yellow);
+  border-radius: 2px;
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+  margin-top: 30px;
+  transition: all 250ms ease-in-out;
+}
+
+.modal-form .btn-sumbit:is(:hover, :focus) {
+  opacity: 0.8;
+}
+
+.modal-form .privacy-policy-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-grey-2);
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (min-width: 768px) {
+  .modal-form {
+    width: 700px;
+    padding: 30px 64px 50px;
+  }
+
+  .modal-form .modal-btn-close {
+    background-color: var(--btn-color-yellow);
+    right: 64px;
+  }
+
+  .modal-form .privacy-policy-text {
+    font-size: 18px;
+  }
+}

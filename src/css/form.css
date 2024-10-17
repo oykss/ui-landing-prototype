@@ -1,0 +1,94 @@
+.check-mark-wrap {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--background-grey-3);
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  flex-shrink: 0;
+  fill: var(--background-grey-3);
+  transition: all 250ms ease-in-out;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.inputBox input {
+  position: relative;
+  padding: 27px 32px 12px 18px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: var(--background-light);
+  color: var(--text-color-grey-2);
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: lowercase;
+  transition: all 250ms ease-in-out;
+}
+
+.inputBox label {
+  position: absolute;
+  left: 18px;
+  padding: 16px 0;
+  pointer-events: none;
+  font-size: 18px;
+  color: var(--text-color-grey-2);
+  text-transform: capitalize;
+  transition: all 250ms ease-in-out;
+}
+
+.inputBox input:not(:placeholder-shown) ~ label,
+.inputBox input:focus ~ label {
+  font-size: 14px;
+  transform: translateY(-12px);
+}
+
+form .inputBox input:not(:placeholder-shown) ~ .icon-close,
+form .inputBox input:focus ~ .icon-close {
+  opacity: 1;
+  cursor: pointer;
+}
+
+form .privacy-policy-link {
+  color: var(--text-color);
+  transition: all 250ms ease-in-out;
+}
+
+form input[type='checkbox']:checked + .privacy-policy-label > .check-mark-wrap {
+  background-color: var(--effect-color-yellow);
+  border: none;
+  fill: var(--effect-color-white);
+}
+
+form .privacy-policy-label {
+  display: flex;
+  align-items: baseline;
+  margin-top: 32px;
+}
+
+form
+  input[type='checkbox']:checked
+  + .privacy-policy-label
+  > .privacy-policy-text
+  > .privacy-policy-link {
+  color: var(--effect-color-yellow);
+}
+
+.no-validity-input {
+  color: red !important;
+  transition: all 250ms ease-in-out;
+}
+
+.no-validity-checkbox {
+  fill: red !important;
+  border-color: red !important;
+  transition: all 250ms ease-in-out;
+}

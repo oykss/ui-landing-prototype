@@ -1,0 +1,78 @@
+<section class="feedback section-padding" id="feedback" data-aos="zoom-in-up">
+  <div class="container wrap">
+    <img
+      srcset="/img/feedback/shutterstock@1x.jpg 1x, /img/feedback/shutterstock@2x.jpg 2x"
+      src="/img/feedback/shutterstock@1x.jpg"
+      alt="Image team"
+      width="649"
+      height="753"
+    />
+    <div class="form-wrap">
+      <h2 class="title">Зворотній звязок</h2>
+      <p class="desc">
+        Введіть номер телефону i ми передзвонимо Вам у робочий час (пн-пт 06:00-18:00)
+      </p>
+      <form novalidate>
+        <div class="inputBox">
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            minlength="2"
+            placeholder=""
+            required
+          />
+          <svg class="icon-close" data-action="close-name" width="14" height="14">
+            <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+          </svg>
+          <label for="user_name">Ваше імя</label>
+        </div>
+        <div class="inputBox">
+          <input type="email" name="user_email" id="user_email" placeholder="" required />
+          <svg class="icon-close" data-action="close-email" width="14" height="14">
+            <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+          </svg>
+          <label for="user_email">E-mail</label>
+        </div>
+        <div class="inputBox">
+          <input
+            type="tel"
+            name="user_phone"
+            id="user_phone"
+            maxlength="15"
+            placeholder=""
+            required
+          />
+          <svg class="icon-close" data-action="close-phone" width="14" height="14">
+            <use data-action="close-name" href="/img/icons.svg#icon-close"></use>
+          </svg>
+          <label for="user_phone">Phone</label>
+        </div>
+
+        <input
+          class="visually-hidden"
+          type="checkbox"
+          name="user-privacy"
+          id="user-privacy"
+          value="true"
+        />
+        <label class="privacy-policy-label" for="user-privacy">
+          <span class="check-mark-wrap">
+            <svg data-action="icon-check-mar" class="icon-check-mar" width="12" height="10">
+              <use data-action="icon-check-mar" href="/img/icons.svg#icon-checkmark"></use>
+            </svg>
+          </span>
+          <span class="privacy-policy-text">
+            Я підтверджую, що ознайомлений із
+            <a class="privacy-policy-link" href="#" target="_blank">
+              Політикою обробки персональних даних
+            </a>
+            та приймаю умови Політики.
+          </span>
+        </label>
+
+        <button type="submit">Замовити дзвінок</button>
+      </form>
+    </div>
+  </div>
+</section>

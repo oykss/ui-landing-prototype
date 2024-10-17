@@ -1,0 +1,96 @@
+footer {
+  background-color: var(--background-black);
+  padding: 56px 0 20px;
+}
+
+footer .logo {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1;
+  color: var(--text-color-grey-2);
+}
+
+footer .general {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color-grey-3);
+}
+
+footer .desc {
+  color: var(--text-color-grey-2);
+}
+
+footer .icon {
+  fill: var(--background-grey-3);
+}
+
+footer .bottom-item:last-child {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+footer .top-list,
+footer .bottom-list {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .bottom-list {
+  gap: 20px;
+}
+
+footer .top-list {
+  padding-bottom: 36px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--background-grey-3);
+  gap: 20px;
+}
+
+footer .top-item {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+footer .top-item,
+footer .bottom-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer a {
+  transition: all 250ms ease-in-out;
+}
+
+footer a:is(:hover, :focus) {
+  color: var(--effect-color-yellow);
+}
+
+@media (min-width: 768px) {
+  footer .bottom-list {
+    justify-content: space-between;
+  }
+
+  footer .bottom-item:last-child {
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  footer {
+    padding: 80px 0 20px;
+  }
+
+  footer .top-list {
+    padding-bottom: 72px;
+    justify-content: space-between;
+  }
+
+  footer .bottom-item:last-child {
+    gap: 40px;
+  }
+}

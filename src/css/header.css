@@ -1,0 +1,165 @@
+header {
+  height: 56px;
+}
+
+#header {
+  padding: 6px 0;
+  background-color: var(--primary-background);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  overflow: hidden;
+}
+
+header .under-menu {
+  display: none;
+}
+
+header .search {
+  display: none;
+}
+
+header .wrap {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  padding: 8px 0;
+  transition: all 250ms ease-in-out;
+}
+
+header .logo > span {
+  color: var(--text-color-yellow);
+  transition: all 250ms ease-in-out;
+}
+
+header .logo:is(:hover, :focus) {
+  color: var(--text-color-yellow);
+}
+
+header .logo:is(:hover, :focus) > span {
+  color: var(--text-color);
+}
+
+@keyframes slideInShake {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  25% {
+    transform: scale(1.1) rotate(-20deg);
+  }
+
+  50% {
+    transform: scale(1.4) rotate(20deg);
+  }
+
+  75% {
+    transform: scale(1.2) rotate(-20deg);
+  }
+
+  100% {
+    transform: scale(1.2) rotate(0deg);
+  }
+}
+
+header .catalog {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+header .catalog:is(:hover, :focus) .catalog-icon {
+  animation: slideInShake 500ms ease-in-out forwards;
+}
+
+@media (min-width: 768px) {
+  header .logo {
+    font-size: 28px;
+  }
+
+  header .catalog {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  header {
+    height: 66px;
+  }
+
+  #header {
+    padding: 8px 0;
+  }
+
+  header .logo {
+    font-size: 34px;
+  }
+
+  header .catalog {
+    font-size: 20px;
+  }
+
+  header .search {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    fill: var(--background-black);
+    transition: all 250ms ease-in-out;
+  }
+
+  header .search:is(:hover, :focus) {
+    fill: var(--effect-color-yellow);
+  }
+
+  header .menu {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  header .under-menu {
+    display: flex;
+    gap: 28px;
+  }
+
+  header .under-menu-link {
+    font-size: 20px;
+    position: relative;
+  }
+
+  header .under-menu-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--effect-color-yellow);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+  }
+
+  header .under-menu-link:is(:hover, :focus)::after {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header .menu {
+    gap: 80px;
+  }
+
+  header .under-menu {
+    gap: 44px;
+  }
+}

@@ -1,0 +1,77 @@
+.achieve .swiper {
+  padding: 52px 0 39px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  background-image: url('../img/achievements/background-about@1x.jpg');
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .achieve .swiper {
+    background-image: url('../img/achievements/background-about@2x.jpg');
+  }
+}
+
+.achieve .swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achieve .text {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-color-yellow);
+}
+
+.achieve .number {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  color: var(--text-color-yellow);
+}
+
+.achieve .icon-vinok {
+  position: absolute;
+  bottom: 52px;
+  fill: var(--background-yellow);
+}
+
+.achieve .desc {
+  margin-top: 10px;
+  text-align: center;
+  width: 180px;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--text-color-white);
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .achieve .swiper-slide::after {
+    content: '';
+    position: absolute;
+    height: 68px;
+    width: 1px;
+    background: var(--secondary-background);
+    opacity: 0.4;
+    right: -1px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .achieve .swiper-slide:not(:last-child):after {
+    content: '';
+    position: absolute;
+    height: 68px;
+    width: 1px;
+    background: var(--secondary-background);
+    opacity: 0.4;
+    right: -1px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,30 @@
+.modal-thanks {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-thanks .btn-close {
+  right: 20px;
+  top: 20px;
+}
+
+.modal-thanks .modal-title {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-thanks {
+    width: 400px;
+    height: 300px;
+  }
+
+  .modal-thanks .modal-title {
+    font-size: 36px;
+  }
+}

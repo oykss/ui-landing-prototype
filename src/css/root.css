@@ -1,0 +1,29 @@
+:root {
+  --text-color: #373d43;
+  --text-color-white: #fff;
+  --text-color-yellow: #fbdd37;
+  --text-color-grey-1: #959a9f;
+  --text-color-grey-2: #889099;
+  --text-color-grey-3: #c4cbd2;
+
+  --primary-background: #f5f5f5;
+  --secondary-background: #fff;
+  --background-yellow: #fbdd37;
+  --background-black: #373d43;
+  --background-grey-1: #959a9f;
+  --background-grey-2: #889099;
+  --background-grey-3: #c4cbd2;
+  --background-light: #edf1f7;
+  --background-light-1: #fcfcfc;
+
+  --effect-color-yellow: #fbdd37;
+  --effect-color-white: #fff;
+
+  --hero-btn: #edf1f7;
+  --btn-color-yellow: #fbdd37;
+  --btn-color-grey: #889099;
+
+  --pagination-yellow: #fbdd37;
+  --pagination-grey: #edf1f7;
+  --pagination-grey-1: #959a9f;
+}

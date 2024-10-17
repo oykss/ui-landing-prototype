@@ -1,0 +1,127 @@
+.range .button-list {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.range .btn-chois {
+  position: relative;
+  padding: 4px;
+  border: 0;
+  background-color: transparent;
+  font-size: 18px;
+  text-align: center;
+}
+
+.range .btn-chois-unactive::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--background-yellow);
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.range .btn-chois-unactive:is(:hover, :focus)::after {
+  opacity: 1;
+}
+
+.range .btn-chois-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--effect-color-yellow);
+  transition: all 250ms ease-in-out;
+}
+
+.range .content-item:is(:hover, :focus) {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out, box-shadow 250ms ease-in-out;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.range .btn-more {
+  display: flex;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 16px 40px;
+  color: var(--btn-color-grey);
+  border-radius: 2px;
+  background-color: transparent;
+  border: 1px solid var(--btn-color-grey);
+  transition: all 250ms ease-in-out;
+}
+
+.range .btn-more:hover {
+  background-color: var(--btn-color-yellow);
+  border-color: var(--btn-color-yellow);
+  color: var(--text-color);
+}
+
+.range .content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+  transition: all 250ms ease-in-out;
+}
+
+.range .content-item {
+  border-radius: 8px;
+  width: 310px;
+  background-color: var(--secondary-background);
+}
+
+.content-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.content-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.range .desc-wrap > .desc {
+  color: var(--text-color-grey-3);
+}
+
+.range .desc-wrap > .subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 21px 0;
+}
+
+.range .desc-wrap {
+  padding: 24px 19px 32px;
+}
+
+@media (min-width: 768px) {
+  .range .content-list {
+    gap: 40px 32px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .range .content-list {
+    gap: 48px 36px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .range .content-list {
+    gap: 56px 40px;
+    margin-bottom: 56px;
+  }
+}
