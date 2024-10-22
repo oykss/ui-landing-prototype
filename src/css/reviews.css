@@ -104,6 +104,7 @@
   background-color: transparent;
   border: 1px solid var(--btn-color-grey);
   margin-top: 36px;
+  transition: all 250ms ease-in-out;
 }
 
 .reviews .link-more:is(:hover, :focus) {
