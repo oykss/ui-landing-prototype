@@ -197,10 +197,12 @@ function addElements(num) {
 }
 
 function addActive(type) {
-  buttonList
-    .querySelectorAll('.btn-chois')
-    .forEach(btn => btn.classList.remove('btn-chois-active'));
-  const elementCSSList = buttonList.querySelector(`#range #${type}`);
-  elementCSSList.classList.remove('btn-chois-unactive');
-  elementCSSList.classList.add('btn-chois-active');
+  buttonList.querySelectorAll('.btn-chois').forEach(btn => {
+    if (btn.id === type) {
+      btn.classList.remove('btn-chois-unactive');
+      btn.classList.add('btn-chois-active');
+      return;
+    }
+    btn.classList.add('btn-chois-unactive');
+  });
 }
