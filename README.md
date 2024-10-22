@@ -1,1 +1,1 @@
-# my-pet-project-01
+# ui-landing-prototype
